@@ -64,6 +64,10 @@
 
 
 //------------------Added from bdroid_buildcfg.h---------------------
+#ifndef I2SPCM_SLAVE_BRCM
+#define I2SPCM_SLAVE_BRCM FALSE
+#endif
+
 #ifndef UNV_INCLUDED
 #define UNV_INCLUDED FALSE
 #endif
@@ -82,7 +86,7 @@
 
 /* This feature is used to update any QCOM related changes in the stack*/
 #ifndef BLUETOOTH_QTI_SW
-#define BLUETOOTH_QTI_SW TRUE
+#define BLUETOOTH_QTI_SW FALSE
 #endif
 
 #ifndef BTA_BLE_SKIP_CONN_UPD
@@ -3597,7 +3601,7 @@ Range: Minimum 12000 (12 secs) when supporting PBF.
 #endif
 
 #ifndef SDP_AVRCP_1_5
-#define SDP_AVRCP_1_5               TRUE
+#define SDP_AVRCP_1_5               FALSE
 
 #if  SDP_AVRCP_1_5    == TRUE
 #ifndef AVCT_BROWSE_INCLUDED
@@ -3848,7 +3852,7 @@ The maximum number of payload octets that the local device can receive in a sing
 
 /* TEST_APP_INTERFACE */
 #ifndef TEST_APP_INTERFACE
-#define TEST_APP_INTERFACE           TRUE
+#define TEST_APP_INTERFACE           FALSE
 #endif
 
 /* When TRUE remote terminal code included (RPC MUST be included) */
